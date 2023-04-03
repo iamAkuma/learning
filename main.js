@@ -74,6 +74,19 @@ Loop*/
 //     console.log('x is less than 10')
 // }
 
-const addNums = (num1 = 1, num2 = 1) => num1 + num2;
+// const addNums = (num1 = 1, num2 = 1) => num1 + num2;
 
-document.write(addNums(5,5));
+// document.write(addNums(5,5));
+
+//Constructor functions
+function Person(fName, lName, dob) 
+{
+    this.fName = fName;
+    this.lName = lName;
+    this.dob = new Date(dob);
+}
+
+//Instantiate object
+const person1 = new Person('akuma', 'akuma', '1-1-2000');
+console.log(person1.dob.getFullYear());
+
